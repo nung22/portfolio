@@ -1,0 +1,38 @@
+/* The animation code */
+@keyframes boxes {
+  0% {top: -4rem}
+  20% {top: -3rem}
+  40% {top: -2rem}
+  60% {top: -1rem}
+  80% {top: 0rem}
+  100% {top: 1rem}
+}
+
+
+/* The element to apply the animation to */
+#left-box {
+  position: relative;
+  left: 2rem;
+  animation-name: boxes;
+  animation-duration: 3500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+} 
+#middle-box {
+  position: relative;
+  animation-name: boxes;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+} 
+#right-box {
+  position: relative;
+  right: 2rem;
+  animation-name: boxes;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+} 
