@@ -2,3 +2,26 @@
   padding: 0;
   margin: 0;
 }
+
+/* Color change animation */
+@-webkit-keyframes imptText {
+  0%{color:white}
+  /* 50%{0%} */
+  100%{color: #1b75bf;}
+}
+@-moz-keyframes imptText {
+  0%{color:white}
+  /* 50%{0%} */
+  100%{color: #1b75bf;}
+}
+@keyframes imptText {
+  0%{color:white}
+  /* 50%{0%} */
+  100%{color: #1b75bf;}
+}
+
+#important-text:hover {
+  -webkit-animation: imptText 200ms infinite linear;
+  -moz-animation: imptText 200ms infinite linear;
+  animation: imptText 200ms infinite linear;
+}
