@@ -1,5 +1,4 @@
 import React from 'react';
-import { Paper } from '@mui/material';
 import './Home.css'
 
 export default function Home() {
