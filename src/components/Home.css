@@ -1,5 +1,5 @@
-/* The animation code */
-@keyframes boxes {
+/* Box movement animation */
+@-webkit-keyframes boxMove {
   0% {top: -4rem}
   20% {top: -3rem}
   40% {top: -2rem}
@@ -7,32 +7,77 @@
   80% {top: 0rem}
   100% {top: 1rem}
 }
-
+@-moz-keyframes boxMove {
+  0% {top: -4rem}
+  20% {top: -3rem}
+  40% {top: -2rem}
+  60% {top: -1rem}
+  80% {top: 0rem}
+  100% {top: 1rem}
+}
+@keyframes boxMove {
+  0% {top: -4rem}
+  20% {top: -3rem}
+  40% {top: -2rem}
+  60% {top: -1rem}
+  80% {top: 0rem}
+  100% {top: 1rem}
+}
+/* Box gradient animation */
+@-webkit-keyframes boxGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes boxGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes boxGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 /* The element to apply the animation to */
 #left-box {
+  background: linear-gradient(270deg, #eb5252, #3dff5a, #f2db0a);
+  background-size: 200% 200%;
   position: relative;
   left: 2rem;
-  animation-name: boxes;
-  animation-duration: 3500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
+
+  -webkit-animation: boxMove 3500ms linear infinite alternate,
+  boxGradient 6500ms ease infinite;
+  -moz-animation: boxMove 3500ms linear infinite alternate,
+  boxGradient 6500ms ease infinite;;
+  animation: boxMove 3500ms linear infinite alternate,
+  boxGradient 6500ms ease infinite;
 } 
+
 #middle-box {
+  background: linear-gradient(270deg, #af44e8, #0af2d5, #f20ac4);
+  background-size: 200% 200%;
   position: relative;
-  animation-name: boxes;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate-reverse;
-} 
+  
+  -webkit-animation: boxMove 5000ms infinite linear alternate-reverse,
+  boxGradient 6500ms ease infinite;
+  -moz-animation: boxMove 5000ms infinite linear alternate-reverse,
+  boxGradient 6500ms ease infinite;
+  animation: boxMove 5000ms infinite linear alternate-reverse,
+  boxGradient 6500ms ease infinite;
+}
+
 #right-box {
+  background: linear-gradient(270deg, #14e84d, #feb33b, #eb4242);
+  background-size: 200% 200%;
   position: relative;
   right: 2rem;
-  animation-name: boxes;
-  animation-duration: 4000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
+
+  -webkit-animation: boxMove 4000ms infinite linear alternate,
+  boxGradient 6500ms ease infinite;
+  -moz-animation: boxMove 4000ms infinite linear alternate,
+  boxGradient 6500ms ease infinite;
+  animation: boxMove 4000ms infinite linear alternate,
+  boxGradient 6500ms ease infinite;
 } 
