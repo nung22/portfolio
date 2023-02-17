@@ -78,7 +78,7 @@ function App() {
           <div className={`h-px ${colorTheme === 'dark' ? 'bg-white' : 'bg-black'}`} style={{width:"7rem"}}></div>
         </div>
       </ThemeProvider>
-      <div className='mt-auto w-full flex justify-center pb-4'>
+      <div className='mt-auto w-full flex justify-center pb-10'>
         <a href="https://github.com/nung22/portfolio" target="_blank" rel="noopener noreferrer"
           className='text-sm font-semibold opacity-60 text-center hover:text-blue-500 hover:opacity-100'>Designed & Built by Nicholas Ung</a>
       </div>
