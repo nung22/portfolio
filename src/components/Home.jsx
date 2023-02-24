@@ -1,21 +1,26 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Home.css'
+import EastIcon from '@mui/icons-material/East';
+import FleaFlickr from '../assets/projects/FleaFlickr.png'
+import ChowCounter from '../assets/projects/ChowCounter.png'
 
 export default function Home() {
 
   return (
     <div className=''>
       <div className='flex justify-center mt-8 sm:mt-16 z-50 relative top-5'>
-        <div className='flex flex-col gap-3 sm:gap-6 sm:translate-x-2 z-50' style={{width:"36rem"}}>
+        <div className='flex flex-col gap-3 sm:gap-6 sm:translate-x-2 z-50 pr-2' style={{width:"40rem"}}>
           <p className='text-base sm:text-xl font-semibold'>Hello, my name is</p>
           <p className='text-4xl sm:text-7xl font-bold'>Nicholas Ung.</p>
           <p className='text-2xl sm:text-5xl font-semibold'>I'm a web developer.</p>
-          <p className='text-base font-light sm:text-2xl'>My passion lies in solving business problems through
+          <p className='text-base font-light sm:text-2xl'>My passion lies in solving business problems through a
           human-centered approach. I specialize in building and occasionally
-          designing digital experiences.</p>
+          designing digital experiences.
+          </p>
         </div>
       </div>
-      <div className="flex justify-center opacity-30 relative bottom-40 sm:bottom-64">
+      <div className="flex justify-center opacity-30 relative bottom-40 sm:bottom-64" style={{marginLeft:"-3rem"}}>
         <div id="left-box" className="flex items-center rotate-90 rounded-full w-28 h-20 sm:w-36 sm:h-36 z-20 -translate-x-10 sm:translate-x-0
         bg-gradient-to-r 
         from-blue-400 
@@ -38,15 +43,36 @@ export default function Home() {
         animate-gradient-x
         "></div>
       </div>
-      <div className='relative bottom-56' >
-
-        <h2 className="font-semibold text-4xl text-center italic" >Selected Work</h2>
-        {/* <div>
-          <a href=""><img src="" alt="" /></a>
+      <div className='flex justify-center mt-8 sm:mt-16 z-50 relative bottom-80'>
+        <div className='flex flex-col gap-3 sm:gap-10 sm:translate-x-2 z-50' style={{width:"40rem"}}>
+          <Link to={"/about"} className='flex gap-2 text-2xl'>
+            <p>View profile</p>
+            <EastIcon style={{marginTop:"5.5px"}}/>
+          </Link>
+          <h2 className="font-semibold text-3xl italic">Selected Work</h2>
+          <Link to={"/work"} className="flex gap-5 text-xl">
+            <img className="rounded-lg hover:animate-pulse" src={FleaFlickr} width={360} alt="FleaFlickr ScreenShot"/>
+            <div className='flex flex-col justify-between'>
+              <h4 className='text-2xl font-semibold'>FleaFlickr</h4>
+              <p>An issue tracker and project management software</p>
+              <div className='flex gap-2'>
+                <p className='font-semibold'>Read more</p>
+                <EastIcon style={{marginTop:"5.5px"}}/>
+              </div>
+            </div>
+          </Link>
+          <Link to={"/work"} className="flex gap-5 text-xl">
+            <img className="rounded-lg hover:animate-pulse" src={ChowCounter} width={360} alt="Chow Counter ScreenShot"/>
+            <div className='flex flex-col justify-between'>
+              <h4 className='text-2xl font-semibold'>Chow Counter</h4>
+              <p>A calorie-tracking app with built-in tools to discover new restaurant and recipes</p>
+              <div className='flex gap-2'>
+                <p className='font-semibold'>Read more</p>
+                <EastIcon style={{marginTop:"5.5px"}}/>
+              </div>
+            </div>
+          </Link>
         </div>
-        <div>
-
-        </div> */}
       </div>
     </div>
   );
