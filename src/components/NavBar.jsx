@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import resume from '../assets/Nicholas_Ung_Resume.02.2023.pdf'
+import resume from '../assets/Nicholas_Ung_Resume.pdf'
 
 export default function NavBar() {
   return (
