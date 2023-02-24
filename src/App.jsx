@@ -12,6 +12,7 @@ import ThemeSwitch from './components/ThemeSwitch';
 import NavBar from './components/NavBar'
 import Home from './components/Home';
 import About from './components/About';
+import Work from './components/Work';
 
 function App() {
   const [colorTheme, setColorTheme] = useState('dark');
@@ -60,6 +61,7 @@ function App() {
             <Route path="/" element={<Navigate to="/home"/>}/>
             <Route element={<Home/>} path="/home" />
             <Route element={<About/>} path="/about" />
+            <Route element={<Work/>} path="/work" />
           </Routes>
         </div>
         <div className='fixed bottom-20 left-0 flex items-center rotate-90 gap-5' style={{marginLeft:"-2.8rem"}}>
@@ -78,7 +80,7 @@ function App() {
           <div className={`h-px ${colorTheme === 'dark' ? 'bg-white' : 'bg-black'}`} style={{width:"7rem"}}></div>
         </div>
       </ThemeProvider>
-      <div className='mt-auto w-full flex justify-center pb-10'>
+      <div className='mt-auto w-full flex justify-center pb-8'>
         <a href="https://github.com/nung22/portfolio" target="_blank" rel="noopener noreferrer"
           className='text-sm font-semibold opacity-60 text-center hover:text-blue-500 hover:opacity-100'>Designed & Built by Nicholas Ung</a>
       </div>
