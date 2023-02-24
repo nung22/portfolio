@@ -27,7 +27,7 @@ export default function Home() {
             <img className="rounded-lg hover:animate-pulse" src={ChowCounter} width={400} alt="Chow Counter ScreenShot"/>
             <div className='flex flex-col justify-between'>
               <h4 className='text-2xl font-semibold'>Chow Counter</h4>
-              <p>A calorie-tracking app with built-in tools to discover new restaurant and recipes</p>
+              <p>A calorie-tracking app with built-in tools to discover new restaurants and recipes</p>
               <div className='flex gap-2'>
                 <p className='font-semibold'>Read more</p>
                 <EastIcon style={{marginTop:"5.5px"}}/>
