@@ -64,7 +64,7 @@ export default function Home(props) {
             <p>View profile</p>
             <EastIcon style={{marginTop:"5.5px"}}/>
           </Link>
-          <h2 className="font-semibold text-3xl italic">Selected Work</h2>
+          <h2 className="font-bold text-3xl">Selected Work</h2>
           <a href={"https://github.com/nung22/fleaflickr"} className="flex gap-5 text-xl"
           target="_blank"  rel="noopener noreferrer">
             <img className="rounded-lg hover:animate-pulse" src={FleaFlickr} width={360} alt="FleaFlickr ScreenShot"/>
