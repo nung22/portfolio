@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.27e342a8.css",
-    "main.js": "/portfolio/static/js/main.b559b011.js",
+    "main.js": "/portfolio/static/js/main.17753255.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/ChowCounter.png": "/portfolio/static/media/ChowCounter.f0bb186565e5c25d4d45.png",
     "static/media/HTML5_badge.png": "/portfolio/static/media/HTML5_badge.dbc3baa7e405494219e6.png",
@@ -9,7 +9,7 @@
     "static/media/headShot_noBG.png": "/portfolio/static/media/headShot_noBG.ce68db3ee63a4455deb2.png",
     "static/media/MySQL_badge.png": "/portfolio/static/media/MySQL_badge.67646295cd91e7a3920e.png",
     "static/media/headShot_BW_noBG.png": "/portfolio/static/media/headShot_BW_noBG.0368c52abbd7b886b00b.png",
-    "static/media/Nicholas_Ung_Resume.pdf": "/portfolio/static/media/Nicholas_Ung_Resume.46e1341770a577d6ee01.pdf",
+    "static/media/Nicholas_Ung_Resume.pdf": "/portfolio/static/media/Nicholas_Ung_Resume.ae04cd0b108a099c1475.pdf",
     "static/media/Java_badge.png": "/portfolio/static/media/Java_badge.26017f54340ada03ec8b.png",
     "static/media/Bootstrap_badge.png": "/portfolio/static/media/Bootstrap_badge.f132cb791703420e69ca.png",
     "static/media/Python_badge.png": "/portfolio/static/media/Python_badge.a3181aac33b3c1a51a74.png",
@@ -24,11 +24,11 @@
     "static/media/CSS_badge.png": "/portfolio/static/media/CSS_badge.e31e30fbd381c3f058df.png",
     "index.html": "/portfolio/index.html",
     "main.27e342a8.css.map": "/portfolio/static/css/main.27e342a8.css.map",
-    "main.b559b011.js.map": "/portfolio/static/js/main.b559b011.js.map",
+    "main.17753255.js.map": "/portfolio/static/js/main.17753255.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27e342a8.css",
-    "static/js/main.b559b011.js"
+    "static/js/main.17753255.js"
   ]
 }
