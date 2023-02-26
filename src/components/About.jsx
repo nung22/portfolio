@@ -18,8 +18,12 @@ import MongoDB_badge from "../assets/icons/MongoDB_badge.png"
 import SpringBoot_badge from "../assets/icons/SpringBoot_badge.png"
 import Tailwind_badge from "../assets/icons/Tailwind_badge.png"
 import React_badge from "../assets/icons/React_badge.png"
+import Typescript_badge from "../assets/icons/Typescript_badge.png"
+import Git_badge from "../assets/icons/Git_badge.png"
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function About(props) {
+  const matches = useMediaQuery('(min-width:640px)');
   const [picIsHovered, setPicIsHovered] = useState(false);
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -28,74 +32,61 @@ export default function About(props) {
     }, "1000");
   }, [props.colorTheme]);
   return (
-    <div>
+    <div className='mb-12'>
       <div className='flex flex-col gap-10 items-center'>
         {!loaded &&
-        <div className="flex justify-center items-center absolute w-full h-full" style={{backgroundColor: props.colorTheme === 'dark' ? "#121212" : "#ffffff"}}>
-          <Box sx={{ display: 'flex' }} className='pb-96'>
-            <CircularProgress />
+        <div className="flex flex-col justify-between items-center absolute w-11/12 pt-80" 
+        style={{height:'100rem', backgroundColor: props.colorTheme === 'dark' ? "#121212" : "#ffffff"}}>
+          <Box sx={{ display: 'flex' }}>
+            <CircularProgress/>
           </Box>
+          <div></div>
         </div>
         }
-        <div className='flex flex-col sm:flex-row justify-center gap-10 mt-8 sm:mt-32 lg:mt-0 lg:invisible lg:h-0' style={{marginBottom:"-2rem"}}>
-          <div className='flex justify-center sm:flex-none'><img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
-          onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl w-40 h-40 md:w-48 md:h-48 lg:h-0' /></div>
-          <div className='text-sm md:text-base lg:text-lg md:w-80 lg:w-5/12 flex flex-col gap-4'>
-            <p>👋 Hi there, I'm Nick!</p>
+        {matches ?
+          <div className='flex flex-col justify-center items-center mt-16 h-fit text-base gap-5' style={{width:"35rem"}}>
+            <div className='flex gap-4'>
+              <img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
+              onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl h-52 w-52 ' />
+              <div className='w- flex flex-col gap-4'>
+                <p>👋 Hi there, I'm Nick!</p>
+                <p>
+                  I'm a recent graduate of Coding Dojo, where I spent <strong>4 months</strong> honing my skills in
+                  programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
+                  experience in full-stack development, and enriched my understanding of the latest web
+                  technologies and design trends.
+                </p>
+              </div>
+            </div>
             <p>
-              I was a student at Coding Dojo where I spent 4 months honing my skills in
-              programming languages including HTML, CSS, Java, Python, and Javascript. There I gained
-              experience in full-stack development, and enriched my understanding of the latest web
-              technologies and design trends.
-            </p>
-            <p>
-              Through this experience, I had the opportunity to work with both small and large groups.
+              Through this experience, I had the opportunity to work on a vast array of projects with both small and large groups.
               I do my best work with ambitious teams who are proponents of better human experiences,
               a better society and better futures for all of us.
             </p>
-            {/* <p>I'm currently looking for a new role as a developer. <strong>Hire me?</strong></p> */}
+          </div> :
+          <div className='flex flex-col justify-center gap-10 mt-8' style={{width:"320px"}}>
+            <div className='flex justify-center sm:flex-none'><img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
+            onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl w-40 h-40 md:w-48 md:h-48 lg:h-0' /></div>
+            <div className='text-sm flex flex-col gap-4'>
+              <p>👋 Hi there, I'm Nick!</p>
+              <p>
+                I'm a recent graduate of Coding Dojo, where I spent <strong>4 months</strong> honing my skills in
+                programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
+                experience in full-stack development, and enriched my understanding of the latest web
+                technologies and design trends.
+              </p>
+              <p>
+                Through this experience, I had the opportunity to work with both small and large groups.
+                I do my best work with ambitious teams who are proponents of better human experiences,
+                a better society and better futures for all of us.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className='lg:flex lg:justify-center lg:items-center lg:gap-10 lg:mt-16 lg:visible invisible lg:h-fit h-0'>
-          <img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
-          onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl lg:w-64 lg:h-64' />
-          <div className='lg:text-lg flex flex-col gap-4' style={{width:"40rem"}}>
-            <p>👋 Hi there, I'm Nick!</p>
-            <p>
-              I was a student at Coding Dojo where I spent 4 months honing my skills in
-              programming languages including HTML, CSS, Java, Python, and Javascript. There I gained
-              experience in full-stack development, and enriched my understanding of the latest web
-              technologies and design trends.
-            </p>
-            <p>
-              Through this experience, I had the opportunity to work with both small and large groups.
-              I do my best work with ambitious teams who are proponents of better human experiences,
-              a better society and better futures for all of us.
-            </p>
-            {/* <p>I'm currently looking for a new role as a developer. <strong>Hire me?</strong></p> */}
-          </div>
-        </div>
+
+        }
         <Paper className='flex flex-col gap-7 p-5 w-fit' style={{borderRadius:".8rem"}} elevation={4}>
           <h2 className='text-center text-xl sm:text-3xl font-bold'>Technical Skills</h2>
-          <div className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-5 justify-center w-fit'>
-          {/* {[['HTML5', HTML5_badge], ['CSS', CSS_badge], ['Javascript', Javascript_badge], ['Python', Python_badge], 
-          ['Java', Java_badge], ['React', React_badge], ['Flask', Flask_badge], ['SpringBoot', SpringBoot_badge], 
-          ['NodeJS', NodeJS_badge], ['MongoDB', MongoDB_badge], ['MySQL', MySQL_badge], ['MUI', MUI_badge], 
-          ['Bootstrap', Bootstrap_badge], ['Tailwind', Tailwind_badge]].map((skill, index) => (
-            <Paper key={index} className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
-              <img className='w-10 h-10 sm:w-16 sm:h-16' 
-              src={skill[1]} 
-              alt={`${skill[0]} icon`} />
-              <p>
-                {skill[0] === 'SpringBoot' ? 'Spring Boot' 
-                  : skill[0] === 'NodeJS' ? 'Node.js'
-                  : skill[0] === 'MUI' ? 'Material UI'
-                  : skill[0] === 'Tailwind' ? 'TailwindCSS'
-                  : skill[0]
-                }
-              </p>
-            </Paper>
-          ))} */}
+          <div className='grid grid-cols-2 sm:grid-cols-4 gap-5 justify-center w-fit'>
             <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
               <img className='w-10 h-10 sm:w-16 sm:h-16' src={HTML5_badge} alt="HTML5 icon" />
               <p>HTML5</p>
@@ -107,6 +98,10 @@ export default function About(props) {
             <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
               <img className='w-10 h-10 sm:w-16 sm:h-16' src={Javascript_badge} alt="Javascript icon" />
               <p>Javascript</p>
+            </Paper>
+            <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
+              <img className='w-10 h-10 sm:w-16 sm:h-16' src={Typescript_badge} alt="Typescript icon" />
+              <p>Typescript</p>
             </Paper>
             <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
               <img className='w-10 h-10 sm:w-16 sm:h-16' src={Python_badge} alt="Python icon" />
@@ -151,6 +146,10 @@ export default function About(props) {
             <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
               <img className='w-10 h-8 sm:w-16 sm:h-12' src={Tailwind_badge} alt="Tailwind icon" />
               <p>TailwindCSS</p>
+            </Paper>
+            <Paper className='flex flex-col p-4 text-xs justify-between gap-2 font-thin items-center sm:text-base hover:-translate-y-2' style={{borderRadius:"1rem"}} elevation={8}>
+              <img className='w-10 h-10 sm:w-16 sm:h-16' src={Git_badge} alt="Git icon" />
+              <p>Git</p>
             </Paper>
           </div>
         </Paper>

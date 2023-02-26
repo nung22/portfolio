@@ -16,7 +16,8 @@ import Work from './components/Work';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 function App() {
-  const matches = useMediaQuery('(min-width:640px)');
+  const navSwitch = useMediaQuery('(min-width:640px)');
+  const matches = useMediaQuery('(min-width:860px)');
   const [colorTheme, setColorTheme] = useState('dark');
   const navigate = useNavigate();
   const theme = createTheme({
@@ -46,17 +47,17 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={theme} >
-      <div className="flex flex-col h-screen w-full">
+    <ThemeProvider theme={theme}>
+      <div className="flex flex-col h-screen">
         <CssBaseline />
-        <div className='flex justify-between items-center p-8 opacity-80 scroll-invisible'>
+        <div className='flex justify-between items-center p-4 sm:p-8 opacity-80 scroll-invisible'>
             <IconButton aria-label="logo" onClick={() => navigate('/')}>
               <img className='w-12 sm:w-14' src={logo} alt="logo" />
             </IconButton>
           <div className='flex items-center gap-5'>
-            {!matches && <ThemeSwitch onClick={onToggle}/>}
+            {!navSwitch && <ThemeSwitch onClick={onToggle}/>}
             <NavBar/>
-            {matches && <ThemeSwitch onClick={onToggle}/>}
+            {navSwitch && <ThemeSwitch onClick={onToggle}/>}
           </div>
         </div>
         <div className='p-5 flex flex-col'>
@@ -88,7 +89,7 @@ function App() {
         }
         <div className='mt-auto w-full flex justify-center pb-8 z-50 flex-col'>
           {!matches &&
-          <div  className='z-50 mt-auto w-full flex justify-center pb-4 opacity-70 gap-4'>
+          <div  className='z-50 w-full flex justify-center pb-4 opacity-70 gap-4'>
             <a href="https://www.linkedin.com/in/nicholas-ung-285495123/" className='hover:text-blue-500'
             target="_blank" rel="noopener noreferrer">
             <LinkedInIcon/>
