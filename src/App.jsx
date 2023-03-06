@@ -52,7 +52,7 @@ function App() {
         <CssBaseline />
         <div className='flex justify-between items-center p-4 sm:p-8 opacity-80 scroll-invisible'>
             <IconButton aria-label="logo" onClick={() => navigate('/')}>
-              <img className='w-12 sm:w-14' src={logo} alt="logo" />
+              <img className='w-12 h-12 sm:w-14 sm:h-14' src={logo} alt="logo" />
             </IconButton>
           <div className='flex items-center gap-5'>
             {!navSwitch && <ThemeSwitch onClick={onToggle}/>}
