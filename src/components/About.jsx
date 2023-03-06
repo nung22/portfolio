@@ -47,11 +47,11 @@ export default function About(props) {
           <div className='flex flex-col justify-center items-center mt-16 h-fit text-base gap-5' style={{width:"35rem"}}>
             <div className='flex gap-4'>
               <img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
-              onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl h-52 w-52 ' />
+              onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-xl h-52 w-52 ' />
               <div className='w- flex flex-col gap-4'>
                 <p>👋 Hi there, I'm Nick!</p>
                 <p>
-                  I'm a recent graduate of Coding Dojo, where I spent <strong>4 months</strong> honing my skills in
+                  I'm a recent graduate of Coding Dojo, where I honed my skills in
                   programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
                   experience in full-stack development, and enriched my understanding of the latest web
                   technologies and design trends.
@@ -66,11 +66,11 @@ export default function About(props) {
           </div> :
           <div className='flex flex-col justify-center gap-10 mt-8' style={{width:"320px"}}>
             <div className='flex justify-center sm:flex-none'><img src={picIsHovered ? profilePic : profilePicBW}  alt="profile pic"
-            onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-2xl w-40 h-40 md:w-48 md:h-48 lg:h-0' /></div>
+            onMouseOver={() => setPicIsHovered(true)} onMouseOut={() => setPicIsHovered(false)} className=' bg-blue-500 rounded-xl w-40 h-40 md:w-48 md:h-48 lg:h-0' /></div>
             <div className='text-sm flex flex-col gap-4'>
               <p>👋 Hi there, I'm Nick!</p>
               <p>
-                I'm a recent graduate of Coding Dojo, where I spent <strong>4 months</strong> honing my skills in
+                I'm a recent graduate of Coding Dojo, where I honed my skills in
                 programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
                 experience in full-stack development, and enriched my understanding of the latest web
                 technologies and design trends.
