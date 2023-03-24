@@ -82,7 +82,7 @@ function App() {
               <div className={`bg-opacity-70 h-px ${colorTheme === 'dark' ? 'bg-white' : 'bg-black'}`} style={{width:"8rem"}}></div>
             </div>
             <div className='fixed opacity-70 bottom-28 right-0 flex items-center rotate-90 gap-7' style={{marginRight:"-5rem"}}>
-              <a href="mailto:nung@ucla.edu" className='hover:text-blue-500 font-semibold text-lg' style={{ paddingBottom:".2rem"}}>nung@ucla.edu</a>
+              <a href="mailto:nicholasung22@gmail.com" className='hover:text-blue-500 font-semibold text-lg' style={{ paddingBottom:".2rem"}}>nicholasung22@gmail.com</a>
               <div className={`bg-opacity-70 h-px ${colorTheme === 'dark' ? 'bg-white' : 'bg-black'}`} style={{width:"7rem"}}></div>
             </div>
           </div>
