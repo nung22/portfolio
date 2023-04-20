@@ -71,7 +71,7 @@ function App() {
         {matches &&
           <div className='z-50'>
             <div className='fixed opacity-70 bottom-20 left-0 flex items-center rotate-90 gap-5' style={{marginLeft:"-2.8rem"}}>
-              <a href="https://www.linkedin.com/in/nicholas-ung-285495123/" className='hover:text-blue-500'
+              <a href="https://www.linkedin.com/in/nicholas-ung/" className='hover:text-blue-500'
               style={{ paddingBottom:".2rem"}} target="_blank" rel="noopener noreferrer">
               <LinkedInIcon className='-rotate-90'/>
               </a>
