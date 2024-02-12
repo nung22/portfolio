@@ -32,18 +32,18 @@ export default function Home(props) {
             <div className='flex flex-col gap-6 translate-x-2 z-30 pr-2' style={{width:"40rem"}}>
               <p className='text-xl font-semibold'>Hello, my name is</p>
               <p className='text-7xl font-bold'>Nicholas Ung.</p>
-              <p className='text-5xl font-semibold'>I'm a web developer.</p>
+              <p className='text-5xl font-semibold'>I build things for the web.</p>
               <p className='font-light text-2xl'>My passion lies in solving business problems through a
-              human-centered approach. I specialize in building and occasionally
+              human-centered approach. I specialize in developing and occasionally
               designing digital experiences.
               </p>
             </div> :
             <div className='flex flex-col gap-3 z-30 translate-x-7' style={{maxWidth:"360px"}}>
               <p className='text-base font-semibold'>Hello, my name is</p>
               <p className='text-4xl font-bold'>Nicholas Ung.</p>
-              <p className='text-2xl font-semibold'>I'm a web developer.</p>
+              <p className='text-2xl font-semibold'>I build things for the web.</p>
               <p className='text-base font-light'>My passion lies in solving business problems through a
-              human-centered approach. I specialize in building and occasionally
+              human-centered approach. I specialize in developing and occasionally
               designing digital experiences.
               </p>
             </div>

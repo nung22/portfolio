@@ -51,7 +51,7 @@ export default function About(props) {
               <div className='w- flex flex-col gap-4'>
                 <p>👋 Hi there, I'm Nick!</p>
                 <p>
-                  I'm a recent graduate of Coding Dojo, where I honed my skills in
+                  I'm currently a M.S. in Computer Science student at Northeastern University, where I have honed my skills in
                   programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
                   experience in full-stack development, and enriched my understanding of the latest web
                   technologies and design trends.
@@ -70,7 +70,7 @@ export default function About(props) {
             <div className='text-sm flex flex-col gap-4'>
               <p>👋 Hi there, I'm Nick!</p>
               <p>
-                I'm a recent graduate of Coding Dojo, where I honed my skills in
+              I'm currently a M.S. in Computer Science student at Northeastern University, where I have honed my skills in
                 programming languages including <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Javascript</strong>. There I gained
                 experience in full-stack development, and enriched my understanding of the latest web
                 technologies and design trends.
