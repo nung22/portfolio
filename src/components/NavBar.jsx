@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
-import resume from '../assets/Nicholas_Ung_Resume.pdf'
+import resume from '../assets/Nicholas_Ung_resume.pdf'
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
