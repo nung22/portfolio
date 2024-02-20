@@ -6,6 +6,7 @@ import './Home.css'
 import EastIcon from '@mui/icons-material/East';
 import FleaFlickr from '../assets/projects/FleaFlickr.webp'
 import ChowCounter from '../assets/projects/ChowCounter.webp'
+import ILS from '../assets/projects/ILS.webp'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Home(props) {
@@ -56,9 +57,21 @@ export default function Home(props) {
               <EastIcon style={{marginTop:"5.5px"}} className="pb-1 sm:pb-0"/>
             </Link>
             <h2 className="font-bold text-xl sm:text-3xl">Selected Work</h2>
+            <a href={"https://www.infinitelifestylesolutions.org/"} className="flex flex-col sm:flex-row gap-5 text-xl"
+            target="_blank"  rel="noopener noreferrer">
+              <img className="rounded-lg hover:animate-none" src={ILS} width={360} height={360} alt="Infinite Lifestyle Solutions ScreenShot"/>
+              <div className='flex flex-col justify-between sm:w-72'>
+                <h4 className='text-lg sm:text-2xl font-semibold'>Infinite Lifestyle Solutions</h4>
+                <p className='text-sm sm:text-base my-3 sm:my-0'>An organization for transforming lives affected by violence through restorative practices and art therapy</p>
+                <div className='flex gap-1 sm:gap-2 items-center'>
+                  <p className='text-sm sm:text-base font-semibold'>Read more</p>
+                  <EastIcon style={{marginTop:"5.5px"}} className="pb-1 sm:pb-0"/>
+                </div>
+              </div>
+            </a>
             <a href={"https://github.com/nung22/fleaflickr"} className="flex flex-col sm:flex-row gap-5 text-xl"
             target="_blank"  rel="noopener noreferrer">
-              <img className="rounded-lg hover:animate-pulse" src={FleaFlickr} width={360} height={360} alt="FleaFlickr ScreenShot"/>
+              <img className="rounded-lg hover:animate-none" src={FleaFlickr} width={360} height={360} alt="FleaFlickr ScreenShot"/>
               <div className='flex flex-col justify-between sm:w-72'>
                 <h4 className='text-lg sm:text-2xl font-semibold'>FleaFlickr</h4>
                 <p className='text-sm sm:text-base my-3 sm:my-0'>An issue tracker and project management software</p>
@@ -70,7 +83,7 @@ export default function Home(props) {
             </a>
             <a href={"https://github.com/nung22/chow-counter"} className="flex flex-col sm:flex-row gap-5 text-xl"
             target="_blank"  rel="noopener noreferrer">
-              <img className="rounded-lg hover:animate-pulse" src={ChowCounter} width={360} height={360} alt="Chow Counter ScreenShot"/>
+              <img className="rounded-lg hover:animate-none" src={ChowCounter} width={360} height={360} alt="Chow Counter ScreenShot"/>
               <div className='flex flex-col justify-between sm:w-72'>
                 <h4 className='text-lg sm:text-2xl font-semibold'>Chow Counter</h4>
                 <p className='text-sm sm:text-base my-3 sm:my-0'>A calorie-tracking app with built-in tools to discover new restaurants and recipes</p>
