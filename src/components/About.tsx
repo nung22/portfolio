@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import profilePic from "@/assets/headshots/headShot.jpg";
 import Python_badge from "@/assets/icons/Python_badge.png";
 import Bootstrap_badge from "@/assets/icons/Bootstrap_badge.png";
