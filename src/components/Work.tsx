@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import FleaFlickr from "@/assets/projects/FleaFlickr.webp";
 import ChowCounter from "@/assets/projects/ChowCounter.webp";
