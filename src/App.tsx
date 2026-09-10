@@ -111,7 +111,7 @@ export default function App() {
         </header>
 
         {/* Experience Section (Structured Table Style) */}
-        <section className="flex flex-col gap-3 font-mono">
+        <section className="flex flex-col gap-3 font-mono border-b border-zinc-300 dark:border-zinc-700 pb-6">
           <h2 className="text:sm sm:text-xs font-bold tracking-widest text-zinc-500 uppercase">
             Experience
           </h2>
@@ -144,8 +144,8 @@ export default function App() {
         </section>
 
         {/* Tabbed Content Section (Projects / About) */}
-        <TabGroup className="mt-4">
-          <TabList className="flex gap-2 border-b border-zinc-300 dark:border-zinc-700 pb-2 font-mono">
+        <TabGroup>
+          <TabList className="flex gap-2 font-mono">
             <Tab className="data-selected:bg-zinc-900 data-selected:text-white dark:data-selected:bg-zinc-100 dark:data-selected:text-zinc-900 px-4 py-2 text:sm sm:text-xs font-bold uppercase tracking-wider rounded-xl transition-colors outline-none">
               Projects
             </Tab>
