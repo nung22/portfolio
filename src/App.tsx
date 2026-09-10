@@ -15,7 +15,7 @@ import Resume from "@/assets/Nicholas_Ung_resume.pdf";
 export type ColorTheme = "light" | "dark";
 
 export default function App() {
-  const [colorTheme, setColorTheme] = useState<"light" | "dark">("dark");
+  const [colorTheme, setColorTheme] = useState<"light" | "dark">("light");
 
   // Injects the 'dark' class onto the root HTML element so Tailwind can detect it natively
   useEffect(() => {
