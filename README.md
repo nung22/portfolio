@@ -1,32 +1,50 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A minimal, performant website designed to showcase my software engineering experience, projects, and technical skills. The interface is built as a sleek, single-page resume with instant tab switching and a native dark/light mode toggle.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Core**: React + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **UI Primitives**: Headless UI + Heroicons
+- **Package Manager**: Yarn
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Single-Page Architecture**: Instant, zero-reload tab switching between Projects and About sections using Headless UI.
+- **Native Theme Support**: Fully integrated light and dark modes utilizing Tailwind's custom class variants.
+- **Responsive Layout**: A mobile-first design that seamlessly scales into a side-by-side desktop view.
+- **Performance Optimized**: Built entirely with unstyled primitives and utility classes, completely eliminating heavy CSS-in-JS runtimes and artificial loading delays.
 
-## Expanding the Oxlint configuration
+## Local Development
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+To run this project locally, ensure you have Node.js installed on your machine.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+1. Clone the repository:
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+   ```bash
+   git clone [https://github.com/nung22/portfolio.git](https://github.com/nung22/portfolio.git)
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+4. Start the local development server:
+
+   ```bash
+   yarn dev
+   ```
+
+## Author
+
+~ Nicholas Ung
