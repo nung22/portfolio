@@ -41,11 +41,19 @@ export default function App() {
       <main className="max-w-2xl mx-auto flex flex-col gap-8">
         {/* Header Section */}
         <header className="flex flex-col sm:flex-row gap-6 items-center sm:items-start border-b border-zinc-300 dark:border-zinc-700 pb-8">
-          <div className="w-10 h-10 sm:w-28 sm:h-28 rounded-lg overflow-hidden shrink-0">
+<div className="relative w-10 h-10 sm:w-28 sm:h-28 shrink-0">
+
+            <div 
+              className="absolute inset-0 animate-logo-bg opacity-35 hidden sm:block"
+              style={{
+                maskImage: 'radial-gradient(circle at center, black 40%, transparent 75%)',
+                WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 75%)'
+              }}
+            />
             <img
               src={Logo}
               alt="Site Logo"
-              className="w-full h-full object-cover"
+              className="relative z-10 w-full h-full object-cover"
             />
           </div>
           <div className="flex flex-col justify-between items-center sm:items-start flex-1">
