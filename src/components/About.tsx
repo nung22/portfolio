@@ -38,14 +38,14 @@ export default function About() {
 
   return (
     <div className="flex flex-col gap-12 items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-start mt-4 sm:mt-6 h-fit text-sm sm:text-base gap-8 max-w-[320px] sm:max-w-[42rem]">
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-start mt-4 sm:mt-6 h-fit text-sm sm:text-base gap-8 max-w-320px sm:max-w-42rem">
         <img
           src={profilePic}
           alt="Nicholas Ung profile"
-          className="bg-zinc-300 dark:bg-zinc-800 rounded-xl w-48 h-48 sm:w-56 sm:h-56 object-cover shrink-0 border border-zinc-300 dark:border-zinc-700 shadow-sm transition-all duration-300"
+          className="bg-zinc-300 dark:bg-zinc-800 rounded-sm w-48 h-48 sm:w-56 sm:h-56 object-cover shrink-0 border border-zinc-300 dark:border-zinc-700 shadow-sm transition-all duration-300"
         />
 
-        <div className="flex flex-col gap-5 text-zinc-700 dark:text-zinc-300 leading-relaxed text-xs">
+        <div className="flex flex-col gap-5 text-zinc-700 dark:text-zinc-300 leading-relaxed text:sm sm:text-xs">
           <p>
             I started my journey as a programmer by writing Python scripts to
             visualize proteogenomic data for biochemistry research at UCLA. That
@@ -54,9 +54,31 @@ export default function About() {
           </p>
           <p>
             While earning my M.S. in Computer Science at Northeastern
-            University, I guided a frontend migration at PolicyEngine, shipped
-            React components for AWS OpenSearch, and built real-time telemetry
-            applications at JT4.
+            University, I guided a frontend migration at{" "}
+            <a
+              href="https://www.policyengine.org/us/"
+              target="_blank"
+              className="font-bold underline"
+            >
+              PolicyEngine
+            </a>
+            , shipped React components for{" "}
+            <a
+              href="https://opensearch.org/"
+              target="_blank"
+              className="font-bold underline"
+            >
+              AWS OpenSearch
+            </a>
+            , and built real-time telemetry applications at{" "}
+            <a
+              href="https://www.jt4llc.com/what-we-do/"
+              target="_blank"
+              className="font-bold underline"
+            >
+              JT4
+            </a>
+            .
           </p>
           <p>
             My engineering philosophy is simple: prioritize quality, simplicity,
@@ -67,7 +89,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 w-full max-w-[42rem]">
+      <div className="flex flex-col gap-6 w-full max-w-42rem">
         <h2 className="text-xs font-bold tracking-widest text-zinc-500 uppercase">
           Technical Skills
         </h2>
