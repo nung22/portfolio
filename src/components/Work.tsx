@@ -36,7 +36,7 @@ export default function Work() {
       what_i_created:
         "A complete frontend overhaul focusing on accessibility, responsive design, and search engine optimization to drive organic traffic.",
       tech: [
-        { name: "Fullstack", bg: "bg-green-600" },
+        { name: "Figma", bg: "bg-green-600" },
         { name: "HTML", bg: "bg-violet-500" },
         { name: "CSS", bg: "bg-green-600" },
         { name: "JavaScript", bg: "bg-violet-500" },
