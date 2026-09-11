@@ -1,3 +1,4 @@
+import { useState } from "react";
 import profilePic from "@/assets/headshots/headShot.jpg";
 import Python_badge from "@/assets/icons/Python_badge.png";
 import Bootstrap_badge from "@/assets/icons/Bootstrap_badge.png";
@@ -36,13 +37,22 @@ export default function About() {
     { src: Git_badge, label: "Git" },
   ];
 
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className="flex flex-col gap-12 items-center">
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start h-fit text-sm sm:text-base gap-8 max-w-320px sm:max-w-42rem">
         <img
           src={profilePic}
           alt="Nicholas Ung profile"
-          className="bg-zinc-300 dark:bg-zinc-800 w-48 h-48 sm:w-56 sm:h-56 object-cover shrink-0 border transition-all duration-300"
+          decoding="async"
+          ref={(el) => {
+            if (el?.complete) setLoaded(true);
+          }}
+          onLoad={() => setLoaded(true)}
+          className={`bg-zinc-300 dark:bg-zinc-800 w-48 h-48 sm:w-56 sm:h-56 object-cover shrink-0 border transition-opacity duration-300 ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
         />
 
         <div className="flex flex-col gap-5 text-zinc-700 dark:text-zinc-300 leading-relaxed text:sm sm:text-xs">
