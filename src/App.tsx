@@ -41,13 +41,14 @@ export default function App() {
       <main className="max-w-2xl mx-auto flex flex-col gap-8">
         {/* Header Section */}
         <header className="flex flex-col sm:flex-row gap-6 items-center sm:items-start border-b border-zinc-300 dark:border-zinc-700 pb-8">
-<div className="relative w-10 h-10 sm:w-28 sm:h-28 shrink-0">
-
-            <div 
+          <div className="relative w-10 h-10 sm:w-28 sm:h-28 shrink-0">
+            <div
               className="absolute inset-0 animate-logo-bg opacity-35 hidden sm:block"
               style={{
-                maskImage: 'radial-gradient(circle at center, black 40%, transparent 75%)',
-                WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 75%)'
+                maskImage:
+                  "radial-gradient(circle at center, black 40%, transparent 75%)",
+                WebkitMaskImage:
+                  "radial-gradient(circle at center, black 40%, transparent 75%)",
               }}
             />
             <img
@@ -67,7 +68,7 @@ export default function App() {
             </div>
 
             {/* Social Links & Resume Download */}
-            <div className="flex flex-wrap items-center gap-2 mt-4 text-sm sm:text-xs font-medium">
+            <div className="flex flex-wrap items-center gap-2 mt-4 text-xs font-medium">
               <a
                 href="https://github.com/nung22"
                 target="_blank"
@@ -128,7 +129,7 @@ export default function App() {
             ].map((exp, index, arr) => (
               <div
                 key={exp.company}
-                className={`flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-0 px-4 py-3 text-md sm:text-sm ${
+                className={`flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-0 px-4 py-3 text-base sm:text-sm ${
                   index !== arr.length - 1
                     ? "border-b border-zinc-300 dark:border-zinc-700"
                     : ""
@@ -146,12 +147,11 @@ export default function App() {
         {/* Tabbed Content Section (Projects / About) */}
         <TabGroup>
           <TabList className="flex gap-2 font-mono">
-            <Tab className="data-selected:bg-zinc-900 data-selected:text-white dark:data-selected:bg-zinc-100 dark:data-selected:text-zinc-900 px-4 py-2 text:sm sm:text-xs font-bold uppercase tracking-wider rounded-xl transition-colors outline-none">
-              Projects
-            </Tab>
-            <Tab className="data-selected:bg-zinc-900 data-selected:text-white dark:data-selected:bg-zinc-100 dark:data-selected:text-zinc-900 px-4 py-2 text:sm sm:text-xs font-bold uppercase tracking-wider rounded-xl transition-colors outline-none">
-              About
-            </Tab>
+            {["Projects", "About"].map((tabName) => (
+              <Tab className="data-hover:bg-zinc-900/5 data-selected:data-hover:bg-zinc-900 dark:data-hover:bg-zinc-100/5 dark:data-selected:data-hover:bg-zinc-100 data-selected:bg-zinc-900 data-selected:text-white dark:data-selected:bg-zinc-100 dark:data-selected:text-zinc-900 px-4 py-2 text:sm sm:text-xs font-bold uppercase tracking-wider rounded-xl transition-colors outline-none">
+                {tabName}
+              </Tab>
+            ))}
           </TabList>
 
           <TabPanels className="mt-6">
