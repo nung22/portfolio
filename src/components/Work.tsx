@@ -2,9 +2,10 @@ import {
   ArrowTopRightOnSquareIcon,
   CodeBracketIcon,
 } from "@heroicons/react/20/solid";
-import FleaFlickr from "@/assets/projects/FleaFlickr.png";
 import PerfectRep from "@/assets/projects/PerfectRep.png";
-import ILS from "@/assets/projects/ILS.webp";
+import JobSearch from "@/assets/projects/JobSearch.png";
+import ILS from "@/assets/projects/ILS.png";
+import FleaFlickr from "@/assets/projects/FleaFlickr.png";
 
 export default function Work() {
   const projects = [
@@ -28,13 +29,32 @@ export default function Work() {
     },
     {
       featured: true,
+      title: "Nick's Job Search",
+      subtitle: "Targeted ATS Search Engine",
+      img: JobSearch,
+      why_build:
+        "I was exhausted from algorithmic filtering on traditional job boards and wanted a way to find fresh roles directly on company Applicant Tracking Systems (ATS) the moment they go live.",
+      what_i_created:
+        "A quick, static React application that dynamically generates advanced Google Search operators to query over 30 different ATS platforms.",
+      tech: [
+        { name: "React", bg: "bg-green-600" },
+        { name: "TypeScript", bg: "bg-violet-500" },
+        { name: "Tailwind CSS", bg: "bg-green-600" },
+        { name: "Headless UI", bg: "bg-violet-500" },
+        { name: "CI/CD", bg: "bg-green-600" },
+      ],
+      active_site: true,
+      link: "https://github.com/nung22/nicks-job-search",
+    },
+    {
+      featured: false,
       title: "Infinite Lifestyle Solutions",
       subtitle: "Web Platform Overhaul & SEO Optimization",
       img: ILS,
       why_build:
-        "The organization needed a modernized digital presence to better connect with individuals affected by violence and expand their restorative practices.",
+        "The organization needed a revamped digital presence to better connect with individuals affected by violence and expand their restorative practices.",
       what_i_created:
-        "A complete frontend overhaul focusing on accessibility, responsive design, and search engine optimization to drive organic traffic.",
+        "A complete frontend overhaul focusing on accessibility, modern design patterns, and search engine optimization to drive organic traffic.",
       tech: [
         { name: "Figma", bg: "bg-green-600" },
         { name: "HTML", bg: "bg-violet-500" },
