@@ -44,7 +44,7 @@ export default function Work() {
         { name: "CI/CD", bg: "bg-green-600" },
       ],
       active_site: true,
-      link: "https://github.com/nung22/nicks-job-search",
+      link: "https://nung22.github.io/nicks-job-search",
     },
     {
       featured: false,
