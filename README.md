@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-A minimal, performant website designed to showcase my software engineering experience, projects, and technical skills. The interface is built as a sleek, single-page resume with instant tab switching and a native dark/light mode toggle.
+A minimal, performant website I designed to showcase my software engineering experience, projects, and technical skills. It has a single-page resume, tab switching, and a native dark/light mode toggle.
 
 ## Tech Stack
 
