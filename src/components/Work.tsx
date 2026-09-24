@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ArrowTopRightOnSquareIcon,
   CodeBracketIcon,
@@ -86,6 +87,8 @@ export default function Work() {
     },
   ];
 
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className="flex flex-col gap-12 mt-6 mb-12 max-w-3xl mx-auto">
       {projects.map((project) => (
@@ -115,9 +118,16 @@ export default function Work() {
 
             {/* Image */}
             <img
-              className="w-full h-auto object-cover border-[3px] border-zinc-900 dark:border-zinc-200 mb-8 bg-zinc-800"
               src={project.img}
               alt={`${project.title} interface`}
+              decoding="async"
+              ref={(el) => {
+                if (el?.complete) setLoaded(true);
+              }}
+              onLoad={() => setLoaded(true)}
+              className={`w-full h-auto object-cover border-[3px] border-zinc-900 dark:border-zinc-200 mb-8 bg-zinc-800 shrink-0 transition-opacity duration-300 ${
+                loaded ? "opacity-100" : "opacity-0"
+              }`}
             />
 
             <div className="flex flex-col gap-8">

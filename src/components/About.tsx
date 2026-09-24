@@ -44,7 +44,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start h-fit text-sm sm:text-base gap-8 max-w-320px sm:max-w-42rem">
         <img
           src={profilePic}
-          alt="Nicholas Ung profile"
+          alt="Nicholas Ung headshot"
           decoding="async"
           ref={(el) => {
             if (el?.complete) setLoaded(true);
